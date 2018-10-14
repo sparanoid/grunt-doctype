@@ -32,8 +32,10 @@ In your project's Gruntfile, add a section named `doctype` to the data object pa
 grunt.initConfig({
   doctype: {
     options: {
-      algorithm: "sha512",
-      selector: 'script[src]:not([integrity]):not([src^="http"]):not([src^="//"])'
+      selector: '/<!DOCTYPE[^>[]*(\[[^]]*\])?>/i'
+      transform: function (input) {
+        return `<!${input[1].toLowerCase()} HTML>`;
+      }
     },
     all: {
       files: {
@@ -56,7 +58,7 @@ grunt.initConfig({
   doctype: {
     all: {
       options: {
-        algorithm: '/<!DOCTYPE[^>[]*(\[[^]]*\])?>/i'
+        selector: '/<!DOCTYPE[^>[]*(\[[^]]*\])?>/i'
       },
       files: {
         'dest-index.html': 'source-index.html',
