@@ -1,9 +1,10 @@
 module.exports = function(grunt) {
   const path = require('path');
 
-  grunt.registerMultiTask('doctype', 'minimal effort DOCTYPE transformation ', function() {
+  grunt.registerMultiTask('doctype', 'Minimal effort DOCTYPE transformation ', function() {
 
     const options = this.options({
+      // https://regex101.com/r/s8SBhI/1/
       selector: /<!(DOCTYPE)([^>]*?)>/i,
       transform: function (input) {
         return input[0].toLowerCase();
