@@ -7,9 +7,7 @@
     "name": "Tunghsiao Liu",
     "email": "t@sparanoid.com"
   },
-  "contributors": [
-    "greenkeeper[bot] <greenkeeper[bot]@users.noreply.github.com>"
-  ],
+  "contributors": [],
   "repository": {
     "type": "git",
     "url": "git://github.com/sparanoid/grunt-doctype.git"
