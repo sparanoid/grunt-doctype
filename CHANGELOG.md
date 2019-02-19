@@ -1,3 +1,13 @@
+<a name="2.0.2"></a>
+## [2.0.2](https://github.com/sparanoid/grunt-doctype/compare/v2.0.1...v2.0.2) (2019-02-19)
+
+
+### Bug Fixes
+
+* update potential security vulnerability deps ([784d08b](https://github.com/sparanoid/grunt-doctype/commit/784d08b))
+
+
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/sparanoid/grunt-doctype/compare/v2.0.0...v2.0.1) (2018-10-14)
 
